@@ -1,16 +1,59 @@
-# React + Vite
+# 🌐 Sistema Multilíngue com React Context API
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Um projeto educacional demonstrando o uso do **Context API** do React para gerenciamento global de idioma, com suporte a múltiplos idiomas (Português, Inglês, Espanhol) e persistência de preferências.
 
-Currently, two official plugins are available:
+## 📋 Sobre o Projeto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Este projeto foi desenvolvido para demonstrar na prática como utilizar o **Context API** do React para gerenciar estado global de forma eficiente, sem a necessidade de "prop drilling" (passar props manualmente por vários níveis de componentes).
 
-## React Compiler
+### 🎯 Objetivo Educacional
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Demonstrar os conceitos fundamentais do Context API:
+- ✅ Criação e configuração de Contexto
+- ✅ Implementação de Provider global
+- ✅ Consumo de contexto com custom hook
+- ✅ Persistência de dados com localStorage
+- ✅ Componentização e boas práticas React
 
-## Expanding the ESLint configuration
+### 🌍 Idiomas Suportados
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+| Idioma | Código | Bandeira |
+|--------|--------|----------|
+| Português (Brasil) | `pt` | 🇧🇷 |
+| English (EUA) | `en` | 🇺🇸 |
+| Español | `es` | 🇪🇸 |
+
+## 🚀 Funcionalidades
+
+- 🔄 **Troca de idioma em tempo real** - Selecione o idioma e veja toda interface se adaptar instantaneamente
+- 💾 **Persistência de preferência** - O idioma escolhido é salvo no localStorage e mantido entre sessões
+- 🔔 **Notificações visuais** - Feedback ao trocar de idioma
+- 📱 **Design responsivo** - Adapta-se a diferentes tamanhos de tela
+- 🎨 **Interface moderna** - Estilizada com TailwindCSS
+- 🔁 **Reset para padrão** - Botão para voltar ao idioma original (Português)
+
+
+## 🔧 Como Executar o Projeto
+
+### Pré-requisitos
+
+Certifique-se de ter instalado em sua máquina:
+- **Node.js** (versão 14 ou superior)
+- **npm** (gerenciador de pacotes do Node)
+
+### Passo a Passo
+
+#### 1. Clone o repositório (ou crie os arquivos manualmente)
+
+```bash
+# Se estiver usando git
+git clone <url-do-repositorio>
+
+### Instale e configure o TailwindCSS
+
+https://tailwindcss.com/docs/installation/using-vite
+
+### Executar o Projeto
+
+npm install
+npm run dev
