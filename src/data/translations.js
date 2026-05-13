@@ -76,7 +76,7 @@ export const translations = {
     'button.save': 'Save preference',
     
     // Messages
-    'message.changed': 'Language changed to'
+    'message.changed': 'The language changed to '
   },
   
   // Espanhol
@@ -122,9 +122,9 @@ export const translations = {
 
 // Lista de idiomas disponíveis
 export const availableLanguages = [
-  { code: 'pt', name: 'Português', flag: '🇧🇷', native: 'Português' },
-  { code: 'en', name: 'English', flag: '🇺🇸', native: 'English' },
-  { code: 'es', name: 'Español', flag: '🇪🇸', native: 'Español' }
+  { code: 'pt', name: 'Português', flag: 'BR', native: 'Português' },
+  { code: 'en', name: 'English', flag: 'US', native: 'English' },
+  { code: 'es', name: 'Español', flag: 'ES', native: 'Español' }
 ];
 
 // Função helper para pegar traduções
