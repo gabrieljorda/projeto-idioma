@@ -110,7 +110,7 @@ export const availableLanguages = [
   { code: 'es', name: 'Español', flag: 'ES', native: 'Español' }
 ];
 
-// Função helper para pegar traduções
+// Função para pegar traduções
 export function translate(lang, key) {
   return translations[lang]?.[key] || key;
 }

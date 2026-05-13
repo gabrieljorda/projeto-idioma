@@ -18,11 +18,6 @@ export function LanguageProvider({ children }) {
   // Estado para mensagem de notificação
   const [notification, setNotification] = useState(null);
   
-  // Efeito para salvar idioma no localStorage quando mudar
-  useEffect(() => {
-    localStorage.setItem('app-language', language);
-  }, [language]);
-  
   
   const changeLanguage = (newLanguage) => {
     setLanguage(newLanguage);
@@ -41,13 +36,12 @@ export function LanguageProvider({ children }) {
     return translations[language]?.[key] || key;
   };
   
-  // Função para resetar para o idioma padrão
   const resetToDefault = () => {
     setLanguage('pt');
     showNotification('Idioma redefinido para Português');
   };
   
-  // Valor que será disponibilizado para toda a aplicação
+
   const value = {
     language,           
     changeLanguage,     // Função para mudar idioma
