@@ -13,10 +13,7 @@ export function useLanguage() {
 
 // Componente Provider
 export function LanguageProvider({ children }) {
-  const [language, setLanguage] = useState(() => {
-    const savedLanguage = localStorage.getItem('app-language');
-    return savedLanguage || 'pt';
-  });
+  const [language, setLanguage] = useState('pt'); 
   
   // Estado para mensagem de notificação
   const [notification, setNotification] = useState(null);
@@ -26,13 +23,12 @@ export function LanguageProvider({ children }) {
     localStorage.setItem('app-language', language);
   }, [language]);
   
-  // Função para mudar o idioma
+  
   const changeLanguage = (newLanguage) => {
     setLanguage(newLanguage);
     showNotification(`${translate(newLanguage, 'message.changed')} ${newLanguage.toUpperCase()}`);
   };
   
-  // Função para mostrar notificação temporária
   const showNotification = (message) => {
     setNotification(message);
     setTimeout(() => {
@@ -40,8 +36,8 @@ export function LanguageProvider({ children }) {
     }, 3000);
   };
   
-  // Função para traduzir uma chave (usando o idioma atual)
-  const t = (key) => {
+ 
+    const t = (key) => {
     return translations[language]?.[key] || key;
   };
   

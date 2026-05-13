@@ -4,12 +4,7 @@ export const translations = {
     // Cabeçalho
     'app.title': 'Sistema Multilíngue',
     'app.subtitle': 'Aprendendo React Context API',
-    
-    // Navegação
-    'nav.home': 'Início',
-    'nav.about': 'Sobre',
-    'nav.services': 'Serviços',
-    'nav.contact': 'Contato',
+  
     
     // Conteúdo Principal
     'content.welcome': 'Bem-vindo ao nosso sistema!',
@@ -32,7 +27,6 @@ export const translations = {
     'footer.current': 'Idioma atual',
     
     // Botões
-    'button.learn': 'Saiba mais',
     'button.save': 'Salvar preferência',
     
     // Mensagens
@@ -45,11 +39,7 @@ export const translations = {
     'app.title': 'Multilingual System',
     'app.subtitle': 'Learning React Context API',
     
-    // Navigation
-    'nav.home': 'Home',
-    'nav.about': 'About',
-    'nav.services': 'Services',
-    'nav.contact': 'Contact',
+
     
     // Main Content
     'content.welcome': 'Welcome to our system!',
@@ -72,7 +62,6 @@ export const translations = {
     'footer.current': 'Current language',
     
     // Buttons
-    'button.learn': 'Learn more',
     'button.save': 'Save preference',
     
     // Messages
@@ -84,12 +73,7 @@ export const translations = {
     // Header
     'app.title': 'Sistema Multilingüe',
     'app.subtitle': 'Aprendiendo React Context API',
-    
-    // Navigation
-    'nav.home': 'Inicio',
-    'nav.about': 'Acerca de',
-    'nav.services': 'Servicios',
-    'nav.contact': 'Contacto',
+  
     
     // Main Content
     'content.welcome': '¡Bienvenido a nuestro sistema!',
@@ -111,8 +95,7 @@ export const translations = {
     // Footer
     'footer.current': 'Idioma actual',
     
-    // Buttons
-    'button.learn': 'Aprende más',
+    // Button
     'button.save': 'Guardar preferencia',
     
     // Messages

@@ -10,7 +10,6 @@ export function LanguageSelector() {
   
   return (
     <div className="relative">
-      {/* Botão para abrir/fechar seletor */}
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="bg-white border-2 border-blue-500 rounded-lg px-6 py-3 flex items-center space-x-3 hover:shadow-lg transition-all duration-300 mx-auto"
@@ -29,7 +28,7 @@ export function LanguageSelector() {
         </svg>
       </button>
       
-      {/* Dropdown de idiomas */}
+
       {isOpen && (
         <div className="absolute top-full left-0 right-0 mt-2 bg-white rounded-lg shadow-xl border border-gray-200 overflow-hidden z-50">
           {availableLanguages.map((lang) => (
@@ -48,9 +47,7 @@ export function LanguageSelector() {
                 <div className="font-semibold text-gray-800">
                   {lang.name}
                 </div>
-                <div className="text-xs text-gray-500">
-                  {lang.native}
-                </div>
+                
               </div>
               {language === lang.code && (
                 <svg className="w-5 h-5 text-blue-500" fill="currentColor" viewBox="0 0 20 20">
