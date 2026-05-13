@@ -49,10 +49,6 @@ Certifique-se de ter instalado em sua máquina:
 # Se estiver usando git
 git clone <url-do-repositorio>
 
-### Instale e configure o TailwindCSS
-
-https://tailwindcss.com/docs/installation/using-vite
-
 ### Executar o Projeto
 
 npm install
